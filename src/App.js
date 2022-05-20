@@ -2,6 +2,9 @@ import './App.scss';
 import ToDoList from "./ToDoList/ToDoList";
 
 function App() {
+    const toDosEndpoint = process.env.API_BASE
+        ? process.env.API_BASE
+        : 'http://localhost:3001/todos';
     return (
         <div className="container mx-auto mt-12">
             <div className="text-center">
@@ -10,7 +13,7 @@ function App() {
                 <hr/>
                 <p className="text-gray-500 my-4 mt-14"><em>Hey! Don't forget the milk!</em></p>
             </div>
-            <ToDoList/>
+            <ToDoList apiBase={toDosEndpoint}/>
         </div>
     );
 }

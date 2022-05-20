@@ -1,0 +1,20 @@
+.add-item {
+  @apply p-4 rounded-xl border-2 border-gray-200 text-xl mt-8 mx-auto;
+  width: 70%;
+
+  form {
+    @apply flex items-center;
+
+    label {
+      @apply font-bold pr-4 flex-none;
+    }
+
+    input[type=text] {
+      @apply border p-2 rounded bg-red-100 mr-4 grow;
+    }
+
+    input[type=submit] {
+      @apply rounded bg-green-600 text-white py-2 px-16 flex-none;
+    }
+  }
+}

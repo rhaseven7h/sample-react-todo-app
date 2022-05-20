@@ -9,6 +9,14 @@
         @apply pl-4;
       }
 
+      .todo-delete {
+        @apply text-sm border-2 px-4 py-1 rounded-xl ml-4 text-white bg-red-700 border-none;
+      }
+      .todo-delete:hover {
+        cursor: pointer;
+        @apply bg-red-400;
+      }
+
       .completed {
         text-decoration: line-through;
       }

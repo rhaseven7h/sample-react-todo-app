@@ -1,19 +1,24 @@
 {
   "todos": [
     {
-      "id": 1,
+      "title": "nonono",
       "done": false,
-      "title": "Buy milk"
+      "id": 3
     },
     {
-      "id": 2,
-      "done": false,
-      "title": "Take out the trash"
-    },
-    {
-      "id": 3,
+      "title": "nonono",
       "done": true,
-      "title": "Something that has already been done"
+      "id": 4
+    },
+    {
+      "title": "A new one",
+      "done": false,
+      "id": 6
+    },
+    {
+      "title": "Final",
+      "done": true,
+      "id": 8
     }
   ]
 }
