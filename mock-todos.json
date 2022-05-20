@@ -1,0 +1,19 @@
+{
+  "todos": [
+    {
+      "id": 1,
+      "done": false,
+      "title": "Buy milk"
+    },
+    {
+      "id": 2,
+      "done": false,
+      "title": "Take out the trash"
+    },
+    {
+      "id": 3,
+      "done": true,
+      "title": "Something that has already been done"
+    }
+  ]
+}

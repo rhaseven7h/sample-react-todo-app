@@ -1,0 +1,21 @@
+.to-do-list {
+  ul {
+    @apply text-2xl mx-auto pt-12;
+    width: 70%;
+
+    li {
+      @apply my-4;
+      span {
+        @apply pl-4;
+      }
+
+      .completed {
+        text-decoration: line-through;
+      }
+    }
+  }
+
+  p.fetch-error {
+    @apply text-center text-red-400 uppercase font-bold;
+  }
+}
