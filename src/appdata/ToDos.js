@@ -1,6 +1,8 @@
 import axios from "axios";
 
 class ToDos {
+    toDosEndpoint;
+
     constructor(apiEndpointsBase) {
         if (!apiEndpointsBase)
             throw new Error('missing backend API endpoints base');
@@ -8,37 +10,29 @@ class ToDos {
             this.toDosEndpoint = apiEndpointsBase;
     }
 
-    list() {
-        return axios.get(this.toDosEndpoint);
-    }
+    list = () => axios.get(this.toDosEndpoint);
 
-    update(toDoId, state) {
-        return axios.patch(
-            `${this.toDosEndpoint}/${toDoId}`,
-            { done: state },
-            {
-                headers: {
-                    'Content-Type': 'application/json',
-                }
+    update = (toDoId, state) => axios.patch(
+        `${this.toDosEndpoint}/${toDoId}`,
+        { done: state },
+        {
+            headers: {
+                'Content-Type': 'application/json',
             }
-        );
-    }
+        }
+    );
 
-    delete(toDoId) {
-        return axios.delete(
-            `${this.toDosEndpoint}/${toDoId}`,
-        );
-    }
+    delete = toDoId => axios.delete(
+        `${this.toDosEndpoint}/${toDoId}`,
+    );
 
-    create(title) {
-        return axios.post(
-            this.toDosEndpoint,
-            {
-                title: title,
-                done: false,
-            }
-        );
-    }
+    create = title => axios.post(
+        this.toDosEndpoint,
+        {
+            title: title,
+            done: false,
+        }
+    );
 }
 
 export default ToDos;

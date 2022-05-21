@@ -21,6 +21,12 @@ You can start the demo backend by installing `json-server`:
 npm install -g json-server
 ```
 
+Create a mock-todos.json yourself, or make a copy of the provided sample one:
+
+```shell
+cp mock-todos.json.dist mock-todos.json
+```
+
 then, run the following command, at the root directory of the project:
 
 ```shell
